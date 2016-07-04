@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
             return HeroesStorage.getInstance().getHero(id);
         }
 
-        // POST: api/Heroes/
+        // POST: api/Heroes/ ["{name}"]
         public void Post([FromBody] string name)
         {
             HeroesStorage.getInstance().updateHero(-1, name);
